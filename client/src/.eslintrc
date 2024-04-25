@@ -1,0 +1,30 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "jest": true  // Add this line to define Jest as an environment
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off" // Turn off because React 17+ does not require React in scope for JSX
+    },
+    "settings": {
+      "react": {
+        "version": "detect"  // Helps eslint-plugin-react detect the correct React version
+      }
+    }
+  }
+  
